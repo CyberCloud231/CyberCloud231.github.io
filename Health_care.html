@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+         .navbar {
+            background-color:rgb(126, 170, 172); /* Gray background color */
+            font-size: 20px; /* Increased font size */
+            font-weight: 900;
+            justify-content: space-evenly;
+            /* position: fixed;  */
+            z-index: 2000px; 
+            justify-content: space-between;
+        }
+       
+        
+        .nav-item {
+            text-align: center; /* Center align text in nav items */
+            /* margin: 20px; */
+            font-size: 20px;
+        }
+        .nav-item:hover{
+          background-color: rgba(26, 25, 25, 0.356);
+          font-size: 18px;
+          padding: 1.5px;
+          border-radius: 12px;
+          box-shadow: 2px 2px 10px rgba(204, 115, 115, 0.658);
+          /* text-decoration-color: red; */
+          margin: 2px;
+        }
+        .dropdown-menu {
+            text-align: center; /* Center align text in dropdown menu */
+            background-color: rgba(44, 39, 39, 0.562);
+            font-size: 18px;
+        }
+        .dropdown-menu:hover{
+          background-color: rgba(101, 115, 141, 0.719);
+          font-size: 18px;
+          font-weight: 800;
+          padding: 4px;
+
+        }
+        
+        .navbar.fixed-top {
+      transition: top 20s;
+      background-color:rgba(89, 101, 124, 0.582); 
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Add shadow for visual effect */
+    }
+
+    .carousel-caption {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    width: 100%; /* Ensures the caption is centered across the entire slide */
+  }
+
+  .carousel-caption h5 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .carousel-caption .btn {
+    margin-top: 20px;
+  }
+
+  .carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 0;
+  }
+
+  /* Ensuring images are responsive */
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+  }
+    </style>
+</head>
+<body>
+    <!-- nav section starts here -->
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(124, 164, 177);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./logo2.jpg" alt="logo" height="60px;"> DESIRE MEDICAL NETWORK
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item" style="margin-right: 10%;">
+                <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+              </li>
+              <li class="nav-item" style="margin-right: 10%;">
+                <a class="nav-link" href="about_section">About</a>
+              </li>
+              <li class="nav-item dropdown" style="margin-right: 10%;">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- <li><a class="dropdown-item" href="#" style="color: red; font-weight: bold;">Healthcare</a></li> -->
+                  <li><a class="dropdown-item" href="#" style="color: blue; font-weight: bold;">Medical insurance</a></li>
+                  <li><a class="dropdown-item" href="#" style="color: red; font-weight: bold;">Medical logistics</a></li>
+                </ul>
+              </li>
+              <li class="nav-item" style="margin-right: 10%;">
+                <a class="nav-link" href="./Contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./signeed in.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- nav section ends here -->
+<!-- slideshow images for the home start here -->
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000"> <!-- Adjusted interval to 5 seconds -->
+        <img src="./healthcare_5.jpg" class="d-block w-100" alt="healthcare" style="height: 340px;">
+        <div class="carousel-overlay"></div>
+        <div class="carousel-caption">
+          <h3>OUR HEALTHCARE SERVICESES</h3>
+          <p>Medical Diagnosis</p>
+          <p>Don't navigate your health alone. Desire Medical Network's team of experts is here to provide accurate diagnoses you can trust.</p>
+          <p>Desire Medical Network: Diagnose with Desire for Clarity.</p>
+          <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000"> <!-- Adjusted interval to 5 seconds -->
+        <img src="./healthcare_4.jpg" class="d-block w-100" alt="healthcare" style="height: 340px;">
+        <div class="carousel-overlay"></div>
+        <div class="carousel-caption">
+            <h3>OUR HEALTHCARE SERVICESES</h3>
+            <p>Interactive Medical Treatment</p>
+          <p>"Your health, your way. Desire Medical Network's Interactive Treatment fosters a two-way dialogue between you and your doctor, <br>ensuring your voice is heard and your needs are met."<br>
+          "Healthcare, on your terms. Choose Desire Medical Network's Interactive Treatment."</p>
+          <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000"> <!-- Adjusted interval to 5 seconds -->
+        <img src="./healthcare_3.jpg" class="d-block w-100" alt="healthcare" style="height: 340px;">
+        <div class="carousel-overlay"></div>
+        <div class="carousel-caption">
+            <h3>OUR HEALTHCARE SERVICESES</h3>
+            <p> Interactive Children Healthcare</p>
+          <p>"Make checkups fun, knowledge grow! Desire Medical Network's Interactive Children's Healthcare keeps kids engaged while they get healthy."</p>
+          <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000"> <!-- Adjusted interval to 5 seconds -->
+        <img src="./healthcare_2.jpg" class="d-block w-100" alt="healthcare" style="height: 340px;">
+        <div class="carousel-overlay"></div>
+        <div class="carousel-caption">
+            <h3>OUR HEALTHCARE SERVICESES</h3>
+            <p> Safe Healthcare for Women</p>
+            <p>"At Desire, we understand that women's healthcare needs are unique. That's why we've created InteractiveSafe Healthcare, <br>a platform where you can get the information and support you need in a safe and confidential environment."</p>
+          <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000"> <!-- Adjusted interval to 5 seconds -->
+        <img src="./healthcare_1.jpg" class="d-block w-100" alt="healthcare" style="height: 340px;">
+        <div class="carousel-overlay"></div>
+        <div class="carousel-caption">
+            <h3>OUR HEALTHCARE SERVICESES</h3>
+            <p>Advance Operation and sugrycal</p>
+          <p>"Empower your surgical team with the power of interaction. Desire Medical Network's Interactive Advance Operation and Surgical program fosters <br>knowledge sharing and refines surgical techniques for improved patient outcomes."<br>"Desire Medical Network: Interactive Surgery. Advanced Results.</p>
+          
+          <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- slideshow images for the home end here -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script>
+        // Optional: Add animation classes to carousel items for fade effect
+        document.addEventListener('DOMContentLoaded', function () {
+          let carouselItems = document.querySelectorAll('.carousel-item');
+          carouselItems.forEach(function (item) {
+            item.classList.add('carousel-fade'); // Add fade class for animation
+          });
+        });
+      </script>
+
+</body>
+</html>

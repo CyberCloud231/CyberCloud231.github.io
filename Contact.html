@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url(./image\ 4.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            margin: 0;
+            padding: 5px;
+            /* display: flex; */
+            /* align-items: center; */
+            justify-content: center;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: rgb(126, 170, 172); /* Adjusted background color */
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .navbar .navbar-nav .nav-item {
+            text-align: center;
+            margin-right: 10%;
+        }
+
+        .navbar .nav-item:hover {
+            background-color: rgba(26, 25, 25, 0.356);
+            font-size: 18px;
+            padding: 1.5px;
+            border-radius: 12px;
+            box-shadow: 2px 2px 10px rgba(204, 115, 115, 0.658);
+        }
+
+        .bg-cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hh22.jpg);
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+        .bg-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0); /* Semi-transparent black */
+            z-index: -1;
+        }
+
+        .dropdown-menu {
+            background-color: rgba(44, 39, 39, 0.8);
+            font-size: 18px;
+        }
+
+        .dropdown-menu a.dropdown-item {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .dropdown-menu a.dropdown-item:hover {
+            background-color: rgba(101, 115, 141, 0.8);
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 400px; /* Adjust height as needed */
+            border: none;
+        }
+
+        .navbar.fixed-top {
+            background-color: rgba(89, 101, 124, 0.8); /* Adjust background color on scroll */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        /* Additional CSS for form styling */
+.section {
+    padding: 50px 0;
+    color:black;
+    font-weight: 800px;
+}
+
+.form-control {
+    border-radius: 0;
+    color: #9bc6f1;
+    
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-link {
+    color: #007bff;
+    font-weight: normal;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+.input-group-text {
+    background-color: #51606e; /* Lighter background for input group */
+    border-color: #9bc6f1;
+}
+
+.input-group-icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./logo2.jpg" alt="logo" height="60px;"> DESIRE MEDICAL NETWORK
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./HOME.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./Health_care.html">Healthcare</a></li>
+                  <li><a class="dropdown-item" href="#">Medical insurance</a></li>
+                  <li><a class="dropdown-item" href="#">Medical logistics</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./signeed in.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <!-- Map Section -->
+    <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="map embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d754074.5632987724!2d-71.89001164490008!3d42.414881890052285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37099e65ca44d%3A0x16f1d6911ab7951f!2sMassachusetts%20General%20Hospital!5e0!3m2!1sen!2sin!4v1721334963962!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Form Section -->
+<section class="section pb-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <h6 class="title">
+                    Contact form and information
+                </h6>
+            </div>
+            <div class="col-md-10">
+                <h3 class="mb-4">
+                    Have questions? Send us an <a href="mailto:medicalservices@desire.net" class="text-primary" style="text-decoration: none;">email</a>
+                </h3>
+                <p class=" mb-5" style="color:black; font-weight: 600; font-size: 16px;">
+                    For inquiries, please contact us at <a href="mailto:medicalservices@desire.net" class="text-primary" style="text-decoration: none;">medicalservices@desire.net</a>. 
+                </p>
+                
+
+                <!-- Form -->
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="contact-name">Full name</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="contact-name" name="contact-name" required  style="background-color:rgba(97, 102, 102, 0.363); color: white; font-size: 16px;">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <svg class="input-group-icon icon-offset icon icon-person" viewBox="0 0 106 106"
+                                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path transform="translate(3 3)"
+                                                d="M0 100 A 50 50 0 0 1 50 60 A 20 20 0 0 1 50 0 A 20 20 0 0 1 50 60 A 50 50 0 0 1 100 100">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="contact-email">Email address</label>
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="contact-email" name="contact-email" required style="background-color:rgba(97, 102, 102, 0.363); color: white; font-size: 16px;">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <svg class="input-group-icon icon-offset icon icon-envelope" viewBox="0 0 106 106"
+                                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path transform="translate(3 3)"
+                                                d="M0 30 V 10 H 100 V 90 H 0 V 30 L 50 60 L 100 30">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label for="contact-message">Your comments</label>
+                            <textarea class="form-control" id="contact-message" name="contact-message" rows="7"
+                                required style="background-color:rgba(97, 102, 102, 0.363); color: white; font-size: 16px;"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-12"><br>
+                            <button type="submit" class="btn btn-primary">
+                                Send message
+                            </button>
+                            <button type="reset" class="btn btn-link" style="text-decoration: none;">
+                                Reset form
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section><br>
+<!-- Form Section ends -->
+     <!-- the footer section start here  -->
+
+     <footer style="background-color: rgba(0, 0, 0, 0.747);" >
+        <div class="container">
+            <!-- Footer 4 column -->
+            <div class="row">
+                <!-- Service Column -->
+                <div class="col-lg- col-12" style="color: rgba(119, 150, 151, 0.726);">
+                    <div class="row" id="ft-links">
+                        <div class="col-lg-3 col-12">
+                            <h4>Service</h4>
+                            <ul class="list-unstyled mb-0 py-3 py-lg-0">
+                                <li class="mb-2">
+                                    <a href="./index.html" class="text-decoration-none text-reset">Healthcare</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="text-decoration-none text-reset">Medical logistics</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="text-decoration-none text-reset">medical insurance</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Other Columns (About Us, Technology, Locations) follow a similar structure -->
+                    </div>
+                </div>
+                <!-- Headquarters information -->
+                <div class="col-lg-3 col-12" style="color: rgba(0, 0, 255, 0.295);">
+                    <div class="me-7" >
+                        <h4 class="mb-4">Headquarters</h4>
+                        <p  style="color: rgba(168, 57, 57, 0.842);"> Our headquarters are located in Massachusetts, a state at the forefront of healthcare innovation and known for its world-class medical institutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Section of Footer -->
+        <div class="container mt-7 pt-lg-7 pb-4" style="color: rgb(103, 138, 139);">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <a class="mb-4 mb-lg-0 d-block text-inverse" href="#"><img src="./logo2.jpg" alt="" height="40px"></a>
+                </div>
+                <div class="col-md-9 col-lg-6">
+                    <div class="small mb-3 mb-lg-0 text-lg-center">
+                        Copyright © 2024
+                        <span class="text-primary"><a href="#">Desire Network</a></span >
+                        | Designed by
+                        <span class="text-primary"><a href="#">ABRAHAM DARIUS PAYE</a></span>
+                    </div>
+                </div>
+                <!-- Theme Dropdown -->
+                <div class="col-md-3">
+                    <div class="text-md-end d-flex align-items-center justify-content-md-end">
+                        <div class="dropdown">
+                            <button class="btn btn-light btn-icon rounded-circle d-flex align-items-center" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                                <i class="bi theme-icon-active lh-1"><i class="bi theme-icon bi-moon-stars-fill"></i></i>
+                                <span class="visually-hidden bs-theme-text">Toggle theme</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bs-theme-text">
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                        <i class="bi theme-icon bi-sun-fill"></i>
+                                        <span class="ms-2">Light</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark" aria-pressed="true">
+                                        <i class="bi theme-icon bi-moon-stars-fill"></i>
+                                        <span class="ms-2">Dark</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                        <i class="bi theme-icon bi-circle-half"></i>
+                                        <span class="ms-2">Auto</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ms-3 d-flex gap-2">
+                            <!-- Social Media Links or Additional Buttons -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+        <!-- the footer section  section ends here  -->
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Scroll animation script -->
+    <script>
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+          var navbar = document.querySelector('.navbar');
+          if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
+            navbar.classList.add('fixed-top');
+          } else {
+            navbar.classList.remove('fixed-top');
+          }
+        }
+    </script>
+    <!-- JavaScript for form submission handling -->
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // You can add your form submission handling logic here, e.g., AJAX request
+
+        // Optionally, display a success message or redirect to a thank you page
+        alert('Form submitted successfully!');
+        document.getElementById('contact-form').reset(); // Reset form after submission
+    });
+</script>
+</body>
+</html>
